@@ -1,4 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSS Mathematics App M</title>
 
-SSS Mathematics App M provides clear and comprehensive Mathematics lessons for SSS students, including explanations, formulas, worked examples, practice questions and answers for effective learning, revision and examination preparation.
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f2f7fc;
+    color:#222;
+    line-height:1.7;
+}
 
-Learn • Practise • Excel
+*{
+    box-sizing:border-box;
+}
+
+header{
+    background:#0756a3;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+header h1{
+    margin:0;
+    font-size:28px;
+}
+
+header p{
+    margin:8px 0 0;
+}
+
+.container{
+    width:94%;
+    max-width:1000px;
+    margin:auto;
+    padding:20px 0 50px;
+}
+
+.menu{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.12);
+}
+
+.menu h2{
+    color:#0756a3;
+    margin-top:0;
+}
+
+.topic-button{
+    width:100%;
+    text-align:left;
+    background:#0756a3;
+    color:white;
+    border:none;
+    padding:15px;
+    margin:8px 0;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.topic-button:hover{
+    background:#043d75;
+}
+
+.lesson{
+    display:none;
+    background:white;
+    padding:22px;
+    margin-top:20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.12);
+}
+
+.lesson h2{
+    color:#0756a3;
+    border-bottom:2px solid #0756a3;
+    padding-bottom:10px;
+}
+
+.lesson h3{
+    color:#0a4d8c;
+    margin-top:28px;
+}
+
+.formula{
+    background:#fff8df;
+    border-left:5px solid #d79b00;
+    padding:15px;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+.example{
+    background:#eef6ff;
+    border-left:5px solid #0756a3;
+    padding:16px;
+    margin:18px 0;
+}
+
+.note{
+    background:#fff3cd;
+    border-left:5px solid #d39e00;
+    padding:15px;
+    margin:18px 0;
+}
+
+.practice{
+    background:#effcf3;
+    border-left:5px solid #198754;
+    padding:16px;
+    margin:20px 0;
+}
+
+.answer{
+    background:#fff0f0;
+    border-left:5px solid #c62828;
+    padding:16px;
+    margin:20px 0;
+}
+
+.back-button{
+    background:#555;
+    color:white;
+    border:none;
+    padding:13px 20px;
+    border-radius:7px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SSS Mathematics App M</h1>
+    <p>Learn • Understand • Practise • Excel</p>
+</header>
+
+<div class="container">
+
+<div class="menu" id="menu">
+
+<h2>Select a Topic</h2>
+
+<button class="topic-button" onclick="openLesson('lesson61')">
+61. Differentiation and Its Applications
+</button>
+
+<button class="topic-button" onclick="openLesson('lesson62')">
+62. Integration and Its Applications
+</button>
+
+<button class="topic-button" onclick="openLesson('lesson63')">
+63. Coordinate Geometry of Straight Lines
+</button>
+
+<button class="topic-button" onclick="openLesson('lesson64')">
+64. Statistics: Measures of Dispersion
+</button>
+
+<button class="topic-button" onclick="openLesson('lesson65')">
+65. Comprehensive Revision and Examination Practice
+</button>
+
+</div>
+
+
+<!-- LESSON 61 -->
+
+<div class="lesson" id="lesson61">
+
+<h2>Topic 61: Differentiation and Its Applications</h2>
+
+<h3>Meaning of Differentiation</h3>
+
+<p>
+Differentiation is a branch of Mathematics known as Calculus. It is used
+to study how one quantity changes in relation to another quantity.
+</p>
+
+<p>
+For example, if distance changes with time, differentiation can help us
+determine the speed or velocity of an object.
+</p>
+
+<p>
+Differentiation is also used to find the gradient of a curve and to solve
+maximum and minimum problems.
+</p>
+
+<h3>Notation</h3>
+
+<p>
+If y depends on x, the derivative of y with respect to x is written as:
+</p>
+
+<div class="formula">
+dy/dx
+</div>
+
+<p>
+It can also be written as:
+</p>
+
+<div class="formula">
+f'(x)
+</div>
+
+<h3>The Power Rule</h3>
+
+<div class="formula">
+If y = xⁿ, then dy/dx = nxⁿ⁻¹
+</div>
+
+<p>
+The power of x is brought down as a coefficient and the power is reduced
+by one.
+</p>
+
+<div class="example">
+
+<h3>Worked Example 1</h3>
+
+<p>Differentiate:</p>
+
+<p>y = x⁵</p>
+
+<p>dy/dx = 5x⁴</p>
+
+<p><strong>Answer = 5x⁴</strong></p>
+
+</div>
+
+<div class="example">
+
+<h3>Worked Example 2</h3>
+
+<p>Differentiate:</p>
+
+<p>y = 3x⁴</p>
+
+<p>dy/dx = 3 × 4x³</p>
+
+<p><strong>dy/dx = 12x³</strong></p>
+
+</div>
+
+<h3>Differentiating Several Terms</h3>
+
+<p>
+When an expression contains several terms, differentiate each term
+separately.
+</p>
+
+<div class="example">
+
+<h3>Worked Example 3</h3>
+
+<p>Differentiate:</p>
+
+<p>y = 2x⁴ + 5x² - 3x + 7</p>
+
+<p>
+dy/dx = 8x³ + 10x - 3
+</p>
+
+<p>
+The derivative of the constant 7 is zero.
+</p>
+
+</div>
+
+<h3>Application: Finding Gradient</h3>
+
+<p>
+The derivative of a curve gives its gradient at a particular point.
+</p>
+
+<div class="example">
+
+<h3>Worked Example 4</h3>
+
+<p>
+Find the gradient of y = x² at x = 4.
+</p>
+
+<p>
+dy/dx = 2x
+</p>
+
+<p>
+At x = 4:
+</p>
+
+<p>
+dy/dx = 2(4)
+</p>
+
+<p><strong>= 8</strong></p>
+
+</div>
+
+<div class="note">
+
+<strong>Remember:</strong>
+
+<p>
+The derivative of a constant is always zero.
+</p>
+
+</div>
+
+<div class="practice">
+
+<h3>Practice Questions</h3>
+
+<ol>
+<li>Differentiate x⁶.</li>
+<li>Differentiate 4x³.</li>
+<li>Differentiate 5x⁴ + 2x.</li>
+<li>Differentiate 7x - 9.</li>
+<li>Find the gradient of y = x² at x = 6.</li>
+</ol>
+
+</div>
+
+<div class="answer">
+
+<h3>Answers</h3>
+
+<p>
+1. 6x⁵<br>
+2. 12x²<br>
+3. 20x³ + 2<br>
+4. 7<br>
+5. 12
+</p>
+
+</div>
+
+<button class="back-button" onclick="backToMenu()">
+← Back to Topics
+</button>
+
+</div>
+
+
+<!-- LESSON 62 -->
+
+<div class="lesson" id="lesson62">
+
+<h2>Topic 62: Integration and Its Applications</h2>
+
+<h3>Meaning of Integration</h3>
+
+<p>
+Integration is the reverse process of differentiation. It is another major
+part of Calculus.
+</p>
+
+<p>
+Integration can be used to find accumulated quantities and areas under
+curves.
+</p>
+
+<h3>The Basic Rule of Integration</h3>
+
+<div class="formula">
+∫xⁿ dx = xⁿ⁺¹/(n + 1) + C
+</div>
+
+<p>
+The power is increased by one and the result is divided by the new power.
+</p>
+
+<h3>Constant of Integration</h3>
+
+<p>
+The letter C is called the constant of integration.
+</p>
+
+<div class="example">
+
+<h3>Worked Example 1</h3>
+
+<p>Integrate:</p>
+
+<p>∫x² dx</p>
+
+<p>
+Increase the power:
+</p>
+
+<p>
+x³
+</p>
+
+<p>
+Divide by 3:
+</p>
+
+<p><strong>x³/3 + C</strong></p>
+
+</div>
+
+<div class="example">
+
+<h3>Worked Example 2</h3>
+
+<p>Integrate:</p>
+
+<p>∫6x² dx</p>
+
+<p>
+= 6(x³/3)
+</p>
+
+<p><strong>= 2x³ + C</strong></p>
+
+</div>
+
+<h3>Integration of Several Terms</h3>
+
+<div class="example">
+
+<h3>Worked Example 3</h3>
+
+<p>Integrate:</p>
+
+<p>∫(4x² + 6x + 5)dx</p>
+
+<p>
+= 4x³/3 + 3x² + 5x + C
+</p>
+
+<p><strong>Answer = 4x³/3 + 3x² + 5x + C</strong></p>
+
+</div>
+
+<h3>Applications of Integration</h3>
+
+<ul>
+<li>Finding areas under curves.</li>
+<li>Finding accumulated quantities.</li>
+<li>Solving problems in Physics and Engineering.</li>
+</ul>
+
+<div class="practice">
+
+<h3>Practice Questions</h3>
+
+<ol>
+<li>Integrate x⁴.</li>
+<li>Integrate 5x².</li>
+<li>Integrate 2x + 4.</li>
+<li>Integrate 10.</li>
+<li>State one application of integration.</li>
+</ol>
+
+</div>
+
+<div class="answer">
+
+<h3>Answers</h3>
+
+<p>
+1. x⁵/5 + C<br>
+2. 5x³/3 + C<br>
+3. x² + 4x + C<br>
+4. 10x + C<br>
+5. Finding area under a curve.
+</p>
+
+</div>
+
+<button class="back-button" onclick="backToMenu()">
+← Back to Topics
+</button>
+
+</div>
+
+
+<!-- LESSON 63 -->
+
+<div class="lesson" id="lesson63">
+
+<h2>Topic 63: Coordinate Geometry of Straight Lines</h2>
+
+<h3>Introduction</h3>
+
+<p>
+Coordinate Geometry studies geometrical shapes using numbers and algebra.
+A straight line can be represented by an equation.
+</p>
+
+<h3>Gradient of a Straight Line</h3>
+
+<p>
+The gradient tells us how steep a line is.
+</p>
+
+<div class="formula">
+m = (y₂ - y₁)/(x₂ - x₁)
+</div>
+
+<div class="example">
+
+<h3>Worked Example 1</h3>
+
+<p>
+Find the gradient between (1, 2) and (3, 8).
+</p>
+
+<p>
+m = (8 - 2)/(3 - 1)
+</p>
+
+<p>
+= 6/2
+</p>
+
+<p><strong>= 3</strong></p>
+
+</div>
+
+<h3>Equation of a Straight Line</h3>
+
+<div class="formula">
+y = mx + c
+</div>
+
+<p>
+Where m is the gradient and c is the y-intercept.
+</p>
+
+<div class="example">
+
+<h3>Worked Example 2</h3>
+
+<p>
+Write the equation of a line with gradient 4 and y-intercept 2.
+</p>
+
+<p>
+y = 4x + 2
+</p>
+
+<p><strong>Answer: y = 4x + 2</strong></p>
+
+</div>
+
+<h3>Equation Through a Point</h3>
+
+<div class="formula">
+y - y₁ = m(x - x₁)
+</div>
+
+<div class="example">
+
+<h3>Worked Example 3</h3>
+
+<p>
+Find the equation of a line with gradient 2 passing through (1, 3).
+</p>
+
+<p>
+y - 3 = 2(x - 1)
+</p>
+
+<p>
+y - 3 = 2x - 2
+</p>
+
+<p><strong>y = 2x + 1</strong></p>
+
+</div>
+
+<h3>Parallel and Perpendicular Lines</h3>
+
+<ul>
+<li>Parallel lines have equal gradients.</li>
+<li>The product of gradients of perpendicular lines is -1.</li>
+</ul>
+
+<div class="practice">
+
+<h3>Practice Questions</h3>
+
+<ol>
+<li>Find the gradient between (2, 3) and (4, 9).</li>
+<li>Write the equation of a line where m = 5 and c = 1.</li>
+<li>Find the equation of a line with m = 3 passing through (0, 4).</li>
+<li>What is the relationship between gradients of parallel lines?</li>
+<li>If one gradient is 4, find the gradient of a perpendicular line.</li>
+</ol>
+
+</div>
+
+<div class="answer">
+
+<h3>Answers</h3>
+
+<p>
+1. 3<br>
+2. y = 5x + 1<br>
+3. y = 3x + 4<br>
+4. They are equal.<br>
+5. -1/4
+</p>
+
+</div>
+
+<button class="back-button" onclick="backToMenu()">
+← Back to Topics
+</button>
+
+</div>
+
+
+<!-- LESSON 64 -->
+
+<div class="lesson" id="lesson64">
+
+<h2>Topic 64: Statistics – Measures of Dispersion</h2>
+
+<h3>Meaning of Dispersion</h3>
+
+<p>
+Measures of dispersion describe how data values are spread out.
+</p>
+
+<p>
+They help us understand whether values are close together or widely spread.
+</p>
+
+<h3>Range</h3>
+
+<div class="formula">
+Range = Highest Value - Lowest Value
+</div>
+
+<div class="example">
+
+<h3>Worked Example 1</h3>
+
+<p>
+Find the range of:
+</p>
+
+<p>
+3, 7, 9, 12, 15
+</p>
+
+<p>
+Range = 15 - 3
+</p>
+
+<p><strong>= 12</strong></p>
+
+</div>
+
+<h3>Variance</h3>
+
+<p>
+Variance measures the average of the squared deviations of values from
+their mean.
+</p>
+
+<h3>Standard Deviation</h3>
+
+<p>
+Standard deviation measures how far values normally spread from the mean.
+</p>
+
+<div class="formula">
+Standard Deviation = √Variance
+</div>
+
+<div class="example">
+
+<h3>Worked Example 2</h3>
+
+<p>
+Compare the ranges of the following sets:
+</p>
+
+<p>
+A: 4, 5, 6, 7, 8
+</p>
+
+<p>
+B: 1, 5, 8, 10, 15
+</p>
+
+<p>
+Range A = 8 - 4 = 4
+</p>
+
+<p>
+Range B = 15 - 1 = 14
+</p>
+
+<p>
+<strong>Therefore, Set B has a greater spread.</strong>
+</p>
+
+</div>
+
+<div class="practice">
+
+<h3>Practice Questions</h3>
+
+<ol>
+<li>Find the range of 2, 5, 8, 10, 16.</li>
+<li>What does dispersion measure?</li>
+<li>State the formula for range.</li>
+<li>What is the relationship between variance and standard deviation?</li>
+<li>Which data set is more spread out: one with range 4 or range 10?</li>
+</ol>
+
+</div>
+
+<div class="answer">
+
+<h3>Answers</h3>
+
+<p>
+1. 14<br>
+2. The spread of data.<br>
+3. Highest value - Lowest value.<br>
+4. Standard deviation is the square root of variance.<br>
+5. The set with range 10.
+</p>
+
+</div>
+
+<button class="back-button" onclick="backToMenu()">
+← Back to Topics
+</button>
+
+</div>
+
+
+<!-- LESSON 65 -->
+
+<div class="lesson" id="lesson65">
+
+<h2>Topic 65: Comprehensive Revision and Examination Practice</h2>
+
+<h3>Introduction</h3>
+
+<p>
+This lesson brings together important ideas from Differentiation,
+Integration, Coordinate Geometry and Statistics.
+</p>
+
+<p>
+Revision should involve understanding formulas, studying worked examples
+and practising different types of questions.
+</p>
+
+<h3>Important Differentiation Formula</h3>
+
+<div class="formula">
+If y = xⁿ, then dy/dx = nxⁿ⁻¹
+</div>
+
+<h3>Important Integration Formula</h3>
+
+<div class="formula">
+∫xⁿdx = xⁿ⁺¹/(n + 1) + C
+</div>
+
+<h3>Important Straight-Line Formula</h3>
+
+<div class="formula">
+y = mx + c
+</div>
+
+<h3>Important Gradient Formula</h3>
+
+<div class="formula">
+m = (y₂ - y₁)/(x₂ - x₁)
+</div>
+
+<h3>Important Statistics Formula</h3>
+
+<div class="formula">
+Range = Highest Value - Lowest Value
+</div>
+
+<div class="example">
+
+<h3>Revision Example 1</h3>
+
+<p>Differentiate:</p>
+
+<p>y = 4x³</p>
+
+<p><strong>dy/dx = 12x²</strong></p>
+
+</div>
+
+<div class="example">
+
+<h3>Revision Example 2</h3>
+
+<p>Integrate:</p>
+
+<p>∫3x²dx</p>
+
+<p><strong>= x³ + C</strong></p>
+
+</div>
+
+<div class="example">
+
+<h3>Revision Example 3</h3>
+
+<p>
+Find the gradient between (1, 4) and (3, 10).
+</p>
+
+<p>
+m = (10 - 4)/(3 - 1)
+</p>
+
+<p>
+= 6/2
+</p>
+
+<p><strong>= 3</strong></p>
+
+</div>
+
+<div class="practice">
+
+<h3>Comprehensive Practice Questions</h3>
+
+<ol>
+<li>Differentiate x⁸.</li>
+<li>Differentiate 2x³ + 5x.</li>
+<li>Integrate x⁵.</li>
+<li>Integrate 6x.</li>
+<li>Find the gradient between (1, 2) and (3, 6).</li>
+<li>Write the equation of a line with m = 3 and c = 2.</li>
+<li>Find the range of 3, 6, 9, 12 and 18.</li>
+<li>State one application of differentiation.</li>
+</ol>
+
+</div>
+
+<div class="answer">
+
+<h3>Answers</h3>
+
+<p>
+1. 8x⁷<br>
+2. 6x² + 5<br>
+3. x⁶/6 + C<br>
+4. 3x² + C<br>
+5. 2<br>
+6. y = 3x + 2<br>
+7. 15<br>
+8. Finding gradient or rate of change.
+</p>
+
+</div>
+
+<button class="back-button" onclick="backToMenu()">
+← Back to Topics
+</button>
+
+</div>
+
+</div>
+
+<footer>
+SSS Mathematics App M | Learn • Understand • Practise • Revise • Excel
+</footer>
+
+<script>
+
+function openLesson(id){
+
+    var lessons = document.querySelectorAll(".lesson");
+
+    for(var i = 0; i < lessons.length; i++){
+        lessons[i].style.display = "none";
+    }
+
+    document.getElementById("menu").style.display = "none";
+
+    var lesson = document.getElementById(id);
+
+    lesson.style.display = "block";
+
+    window.scrollTo(0,0);
+}
+
+
+function backToMenu(){
+
+    var lessons = document.querySelectorAll(".lesson");
+
+    for(var i = 0; i < lessons.length; i++){
+        lessons[i].style.display = "none";
+    }
+
+    document.getElementById("menu").style.display = "block";
+
+    window.scrollTo(0,0);
+}
+
+</script>
+
+</body>
+</html>
